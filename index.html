@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather In Your City</title>
+    <link rel="stylesheet" href="weather.css" />
+    <!-- <link rel="import" href="font/Alegreya.zip" /> -->
+  </head>
+  <body>
+    <header>
+      <nav>
+        <img src="img/hot.png" alt="logo" />
+        <h1 class="welcome">Accurate Weather App</h1>
+      </nav>
+    </header>
+    <div class="box">
+      <section>
+        <div class="search-box" id="search-box">
+          <input
+            type="search"
+            name="my-city"
+            id="search-bar"
+            placeholder="Enter your city here"
+            spellcheck="false"
+          />
+        </div>
+
+        <div class="details-box" id="details-box">
+          <div id="location">Haryana , IN</div>
+          <div id="date">Monday, 30 November 2020</div>
+          <div id="temp">30&deg;C</div>
+          <div id="min-max">min/max</div>
+          <div id="img">&#9729;</div>
+          <div id="atmostphere">Sunny</div>
+        </div>
+      </section>
+    </div>
+    <footer>Project by KUNAL &copy;All the copyright reserved .</footer>
+    <script src="weather.js"></script>
+  </body>
+</html>
