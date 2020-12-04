@@ -1,12 +1,5 @@
-// api.openweathermap.org/data/2.5/weather?q={city name}&appid={API key}
-// c60e21be15362fabae87b660d2dad3f4
 
-const weatherApi ={
-    key:"c60e21be15362fabae87b660d2dad3f4" ,
-    address:"https://api.openweathermap.org/data/2.5/weather"
-}
 
-//getname
 const searchBar = document.getElementById('search-bar');
 
 searchBar.addEventListener('keypress' , (event) => {
@@ -22,7 +15,6 @@ searchBar.addEventListener('keypress' , (event) => {
 
 function getWeatherReport(city){
      fetch(`${weatherApi.address}?q=${city}&appid=${weatherApi.key}&units=metric`)
-    // fetch(`http://api.openweathermap.org/data/2.5/weather?q=mumbai&APPID=c60e21be15362fabae87b660d2dad3f4`)
     .then(weather => {
         return weather.json();
     }).then(showWeatherReport);
